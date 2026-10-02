@@ -18,7 +18,11 @@ function applyTheme(id) {
     } else {
         document.documentElement.setAttribute('data-theme', id);
     }
-    localStorage.setItem('pydata-theme', id);
+    try {
+        localStorage.setItem('pydata-theme', id);
+    } catch (error) {
+        // Theme changes still work when the browser blocks storage.
+    }
 
     // Update active state in panel
     document.querySelectorAll('.theme-option').forEach(opt => {
@@ -77,7 +81,12 @@ function injectThemeSwitcher() {
     });
 
     // Apply saved theme on load
-    const saved = localStorage.getItem('pydata-theme') || 'lime';
+    let saved = 'lime';
+    try {
+        saved = localStorage.getItem('pydata-theme') || saved;
+    } catch (error) {
+        // Keep initializing navigation and other controls without saved settings.
+    }
     applyTheme(saved);
 }
 
