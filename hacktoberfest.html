@@ -1,7 +1,7 @@
 ---
 permalink: "/hacktoberfest/"
 title: "Hacktoberfest Hack Day — Indore x PyData Indore | 4 Oct 2026"
-description: "A one-day, in-person Hacktoberfest Hack Day powered by MLH Hack Days, on Sunday 4 October 2026 at Walkover, LIC Tower, Indore. Form a team, pick a problem, and ship a working prototype with Python & data. Powered by IDFC FIRST Bank. Registrations are closed; entry is limited to confirmed participants."
+description: "A one-day, in-person Hacktoberfest Hack Day as part of MLH Hack Days, on Sunday 4 October 2026 at Walkover, LIC Tower, Indore. Form a team, pick a problem, and ship a working prototype with Python & data. Supported by IDFC FIRST Bank. Registrations are closed; entry is limited to confirmed participants."
 active: "events"
 extra_css: "/Assets/CSS/hack-days.css"
 ---
@@ -39,7 +39,6 @@ extra_css: "/Assets/CSS/hack-days.css"
                     </div>
 
                     <div class="hack-hero-sponsor">
-                        <span class="hack-poweredby-label">Powered by</span>
                         <a href="https://www.idfcfirstbank.com/" target="_blank" rel="noopener" class="hack-hero-sponsor-logo" aria-label="IDFC FIRST Bank">
                             <img src="/Assets/images/HackDays/IDFC-logo-website.svg" alt="IDFC FIRST Bank" width="235" height="83">
                         </a>
@@ -73,7 +72,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
                             </svg>
-                            10:30 AM – 5:30 PM IST
+                            10:00 AM – 5:30 PM IST
                         </span>
                         <span class="event-detail-chip">
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -193,24 +192,33 @@ extra_css: "/Assets/CSS/hack-days.css"
             <div class="topics-header">
                 <span class="section-tag">Challenges</span>
                 <h2 class="section-title">What You'll <span class="highlight">Build</span></h2>
-                <p class="section-text" style="text-align: center; max-width: 680px; margin: 0 auto;">This edition has two challenges. Build a useful working prototype in the spirit of Hacktoberfest and open source.</p>
+                <p class="section-text" style="text-align: center; max-width: 680px; margin: 0 auto;">Two challenges, one day to build something useful. Pick a small problem below, finish one working flow, and demo it with sample data. These ideas are starting points; follow the requirements for your chosen challenge.</p>
             </div>
             <div class="hack-tracks">
                 <article class="hack-track">
                     <div class="hack-track-head"><span class="track-icon" aria-hidden="true">&#10022;</span><div><span class="hack-track-num">Challenge 01</span><h3>Best Use of Gemma 4</h3></div></div>
                     <p class="hack-track-desc">Build with Gemma 4, Google's lightweight, open-weight model, through the Gemini API. Make its AI capabilities a meaningful part of your prototype.</p>
-                    <span class="hack-track-ideas-label">Ideas to get you started</span>
+                    <span class="hack-track-ideas-label">Useful projects you can prototype in a day</span>
                     <ul class="hack-track-ideas">
-                        <li>Create an assistant that works with both text and images.</li>
-                        <li>Build an AI tool for learning, creativity, productivity, or your community.</li>
-                        <li>Prototype a useful experience with an open model through the Gemini API.</li>
-                        <li>Identify the Gemma model in your README and show its integration in your code or demo.</li>
+                        <li><strong>Form Rescue:</strong> A web app that turns confusing form instructions into a guided checklist. Use Gemma to explain each field and flag missing information without inventing answers. One-day build: support one form and show completion progress.</li>
+                        <li><strong>Promise Tracker:</strong> Find commitments buried in a pasted conversation: who promised what, by when, and what is still unresolved. One-day build: use Gemma to create an editable board with a source quote for every task.</li>
+                        <li><strong>Repair Before Replace:</strong> Describe a broken everyday item and the symptoms; Gemma asks clarifying questions and retrieves relevant steps from a supplied repair guide. One-day build: cover bicycle punctures and show the source for each step.</li>
+                        <li><strong>Buy Together:</strong> Help a community combine small purchase requests into one order. Use Gemma to turn messages like &ldquo;need two notebooks&rdquo; into structured items, then group matching requests in code. One-day build: an editable shared order sheet with quantities and totals.</li>
                     </ul>
+                    <p class="hack-track-desc" style="margin-top: var(--space-lg);">Identify the Gemma model in your README and show its integration in your code or demo.</p>
                     <a href="https://mlh.link/gemma" target="_blank" rel="noopener" class="link-arrow">Explore Gemma resources &rarr;</a>
                 </article>
                 <article class="hack-track">
                     <div class="hack-track-head"><span class="track-icon" aria-hidden="true">&#10022;</span><div><span class="hack-track-num">Challenge 02</span><h3>Best Open-Source AI Project</h3></div></div>
                     <p class="hack-track-desc">Create an original project with open-source or open-weight AI at its core: a reusable agent skill, an application using a small or large language model, or software that manages a model's tools and workflow.</p>
+                    <span class="hack-track-ideas-label">Useful projects you can prototype in a day</span>
+                    <ul class="hack-track-ideas">
+                        <li><strong>Token Budget Lab:</strong> A web app that uses an open model to compress long prompts while preserving instructions and key facts. One-day build: compare original and compressed token counts for one target model, test both on the same questions, and show compression overhead alongside potential savings.</li>
+                        <li><strong>Context Picker:</strong> Stop sending an entire document to answer one question. Use an open embedding model to select relevant passages within a token budget. One-day build: upload one text document, ask a question, and inspect the selected excerpts and token count before copying the prompt.</li>
+                        <li><strong>Safe Share:</strong> Preview what sensitive information a support ticket or log would expose before sharing it with AI. Combine pattern checks with an open model to suggest redactions. One-day build: paste text, review highlighted findings, and export an approved copy.</li>
+                        <li><strong>Chat Handoff:</strong> Turn a long AI conversation into a compact brief for the next session. Use an open model to preserve decisions, constraints, failed attempts, and next steps with source references. One-day build: paste a transcript, edit the brief, and compare token counts.</li>
+                    </ul>
+                    <p class="hack-track-desc" style="margin-top: var(--space-lg);">Keep the first version to one input, one useful output, and a few realistic examples. Add accounts, extra integrations, and automation after hack day.</p>
                     <span class="hack-track-ideas-label">Requirements</span>
                     <ul class="hack-track-ideas">
                         <li>Use open-source or open-weight AI as a substantial part of the project.</li>
@@ -219,6 +227,35 @@ extra_css: "/Assets/CSS/hack-days.css"
                         <li>Model harnesses must be original implementations or meaningful improvements to existing open-source harnesses.</li>
                     </ul>
                 </article>
+            </div>
+            <div class="content-card" id="limited-llm-projects" style="margin-top: var(--space-xl);">
+                <span class="section-tag">More Project Ideas</span>
+                <h3>Build with Limited LLM Access</h3>
+                <p>Useful apps can start with short prompts and small outputs. Let code handle sorting, parsing, and chunking, then use your model for the decisions that need language understanding. Adapt these ideas to your chosen challenge and keep its AI requirements in mind.</p>
+                <ul class="hack-track-ideas">
+                    <li><strong>Downloads Organizer:</strong> Sort files by extension and filename rules first; ask the model to classify only unknown filenames. One-day build: preview suggested folders, require approval before moving files, and keep an undo log. Start with filenames rather than file contents.</li>
+                    <li><strong>Daily Standup Writer:</strong> Read a small batch of recent Git commits and draft three lines: completed work, suggested next steps, and blockers to confirm. One-day build: select a repository and date range, then edit and copy the draft. Do not invent blockers or treat suggested plans as facts.</li>
+                    <li><strong>Receipt &amp; Bill Extractor:</strong> Use local OCR or PDF text extraction to read a receipt; ask the model only to map the text to date, vendor, and amount. One-day build: review extracted fields and export CSV, leaving uncertain values for correction.</li>
+                    <li><strong>Notes to Flashcards:</strong> Split notes into short chunks in code and ask the model for one question and answer per chunk. One-day build: paste notes, review cards with their source text, and export them for revision.</li>
+                    <li><strong>Email or Chat Triage:</strong> Use keyword scores to sort obvious cases and ask the model to label only ambiguous messages as &ldquo;reply now&rdquo;, &ldquo;later&rdquo;, or &ldquo;ignore&rdquo;. One-day build: paste a sample inbox and review an editable priority queue without sending or deleting anything.</li>
+                    <li><strong>Meeting Action-Item Extractor:</strong> Start from a text transcript and extract only who does what by when, with a supporting quote. One-day build: paste a short transcript, correct the task table, and export it; flag missing owners or dates. No audio processing needed.</li>
+                    <li><strong>Voice Khata / Expense Log:</strong> Turn a short expense entry into amount, category, and date, then calculate totals in code. One-day build: start with typed entries and an editable ledger; add local speech-to-text only if the laptop can run it comfortably. Keep typed input as a fallback.</li>
+                </ul>
+                <p class="submit-note"><strong>Keep it small:</strong> Limit input length, process one item at a time, and let users review model output. Test your chosen model on a few real examples before the event; short prompts still need accuracy checks.</p>
+            </div>
+            <div class="content-card" id="model-preparation" style="margin-top: var(--space-xl);">
+                <span class="section-tag">Before the Event</span>
+                <h3>Download Your Models Before You Arrive</h3>
+                <p>If your project uses a local open-source or open-weight model, including Gemma, download it onto your laptop before the event. It is best to complete all large downloads at home so you can start building when you arrive.</p>
+                <ul>
+                    <li>Choose a model that fits your laptop's RAM, available storage, and GPU, if required.</li>
+                    <li>Complete any account setup, license acceptance, or access requests ahead of time.</li>
+                    <li>Download the model weights, tokenizer, and required files; install your runtime and project dependencies.</li>
+                    <li>Run a sample prompt locally and check that it works without downloading additional files.</li>
+                    <li>If you use a hosted API, set up and test your API access beforehand and keep a backup internet connection ready. Follow your chosen challenge's integration requirements.</li>
+                </ul>
+                <p><strong>Download resources:</strong> <a href="https://ai.google.dev/gemma/docs/get_started" target="_blank" rel="noopener">Gemma setup &amp; download guide</a> &middot; <a href="https://huggingface.co/google" target="_blank" rel="noopener">Google models on Hugging Face</a> &middot; <a href="https://huggingface.co/models" target="_blank" rel="noopener">Browse open models</a> &middot; <a href="https://huggingface.co/docs/hub/models-downloading" target="_blank" rel="noopener">Hugging Face download instructions</a></p>
+                <p class="submit-note"><strong>Wi-Fi:</strong> Wi-Fi will be provided, but reliable connectivity is not guaranteed. Speeds may vary depending on how many participants are using it at the same time. Please avoid relying on event Wi-Fi for model downloads and bring a mobile hotspot as a backup.</p>
             </div>
             <p class="section-text" style="text-align: center; margin-top: var(--space-xl);"><a href="https://www.mlh.com/events/hacktoberfest-hack-day-indore-x-pydata-indore/challenges" target="_blank" rel="noopener" class="link-arrow">View the official MLH challenges &rarr;</a></p>
         </div>
@@ -246,6 +283,12 @@ extra_css: "/Assets/CSS/hack-days.css"
                 </div>
             </div>
             <p class="submit-note"><strong>Prize availability note:</strong> Prizes may differ from the details listed on the official MLH website, depending on what is received and available on the day of the event.</p>
+            <div class="content-card" style="margin-top: var(--space-xl);">
+                <span class="section-tag">Add-ons</span>
+                <h3>Claim Hacktoberfest Credits</h3>
+                <p>As part of Hacktoberfest, you can also explore and claim credits through the official promotions page. Check each offer for eligibility and redemption details.</p>
+                <a href="https://hacktoberfest.com/my/promos/?utm_source=dev.to&amp;utm_medium=challenge-page&amp;utm_campaign=hacktoberfest-2026&amp;utm_content=weekend-credits-button" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: var(--space-lg);">Explore &amp; Claim Credits &rarr;</a>
+            </div>
         </div>
     </section>
 
@@ -305,20 +348,48 @@ extra_css: "/Assets/CSS/hack-days.css"
                     <div style="margin-bottom: var(--space-4xl);">
                         <span class="section-tag">Agenda</span>
                         <h2 class="section-title" style="margin-bottom: var(--space-sm);">Day <span class="highlight">Schedule</span></h2>
-                        <p class="section-text" style="margin-bottom: 0;">Tentative timeline — the full run of show will be confirmed closer to the event.</p>
+                        <p class="section-text" style="margin-bottom: 0;">All times are in IST. Check-ins begin at 10:00 AM; the opening remarks start at 10:30 AM.</p>
                         <div class="schedule-timeline">
                             <div class="schedule-item">
-                                <div class="schedule-time">10:00–11:00 AM</div>
+                                <div class="schedule-time">10:00–10:30 AM</div>
                                 <div class="schedule-content">
-                                    <div class="schedule-title">Check-In</div>
+                                    <div class="schedule-title">Check-Ins</div>
                                     <div class="schedule-meta">Registration · Networking · Seating arrangements</div>
                                 </div>
                             </div>
                             <div class="schedule-item">
-                                <div class="schedule-time">More soon</div>
+                                <div class="schedule-time">10:30–11:00 AM</div>
                                 <div class="schedule-content">
-                                    <div class="schedule-title">Full schedule coming soon</div>
-                                    <div class="schedule-meta">Kickoff, hacking, demos &amp; judging times will be announced closer to the day.</div>
+                                    <div class="schedule-title">Opening Remarks &amp; About Hacktoberfest</div>
+                                    <div class="schedule-meta">Welcome, event overview, and an introduction to Hacktoberfest.</div>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">11:00–11:30 AM</div>
+                                <div class="schedule-content">
+                                    <div class="schedule-title">Mini Sessions</div>
+                                    <div class="schedule-meta">Short sessions before the project work begins.</div>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">11:30 AM–4:00 PM</div>
+                                <div class="schedule-content">
+                                    <div class="schedule-title">Project Session</div>
+                                    <div class="schedule-meta">Build your project with your team. Meal break: approximately 1:30–2:00 PM.</div>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">4:00–5:00 PM</div>
+                                <div class="schedule-content">
+                                    <div class="schedule-title">Judging</div>
+                                    <div class="schedule-meta">Present your project to the judges.</div>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">5:00–5:30 PM</div>
+                                <div class="schedule-content">
+                                    <div class="schedule-title">Closing Ceremony</div>
+                                    <div class="schedule-meta">Wrap up the day and celebrate the projects.</div>
                                 </div>
                             </div>
                         </div>
@@ -362,7 +433,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                                 <li><span class="note-ico">✅</span><span><strong style="color: var(--color-gray-100);">Every member must be confirmed.</strong> Registrations are closed. Only confirmed participants will be allowed to attend.</span></li>
                                 <li><span class="note-ico">👥</span><span><strong style="color: var(--color-gray-100);">Team details at sign-up.</strong> You'll need to provide your team details — team name and members (up to 4) — while filling out the registration form.</span></li>
                                 <li><span class="note-ico">🔌</span><span><strong style="color: var(--color-gray-100);">Charging points are limited.</strong> Come fully charged, carry a power bank, and plan accordingly.</span></li>
-                                <li><span class="note-ico">📶</span><span><strong style="color: var(--color-gray-100);">Keep a backup internet connection.</strong> Wi-Fi will be provided, but please have a mobile hotspot ready in case of any Wi-Fi issues.</span></li>
+                                <li><span class="note-ico">📶</span><span><strong style="color: var(--color-gray-100);">Download models before arriving.</strong> Wi-Fi will be provided, but reliable connectivity is not guaranteed and speeds may vary with simultaneous usage. Bring a mobile hotspot as a backup and <a href="#model-preparation">prepare your models in advance</a>.</span></li>
                                 <li><span class="note-ico">💻</span><span><strong style="color: var(--color-gray-100);">Bring your essentials.</strong> Laptop, charger, and a valid photo ID are a must.</span></li>
                             </ul>
                         </div>
@@ -379,7 +450,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                     </div>
                     <div class="event-sidebar-row">
                         <span class="event-sidebar-label">Time</span>
-                        <span class="event-sidebar-value">10:30 AM – 5:30 PM</span>
+                        <span class="event-sidebar-value">10:00 AM – 5:30 PM</span>
                     </div>
                     <div class="event-sidebar-row">
                         <span class="event-sidebar-label">Format</span>
@@ -426,14 +497,16 @@ extra_css: "/Assets/CSS/hack-days.css"
         <div class="container">
             <div class="topics-header">
                 <span class="section-tag">Partners</span>
-                <h2 class="section-title">Powered <span class="highlight">By</span></h2>
             </div>
 
             <div class="sponsor-spotlight">
                 <div style="flex: 0 0 auto;"><a href="https://www.idfcfirstbank.com/" target="_blank" rel="noopener" class="sponsor-spotlight-logo" aria-label="IDFC FIRST Bank"><img src="/Assets/images/HackDays/IDFC-logo-website.svg" alt="IDFC FIRST Bank" width="235" height="83" loading="lazy"></a></div>
                 <div style="flex: 1 1 280px;">
-                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);"><h3 style="margin: 0;">IDFC FIRST Bank</h3><span class="hack-role-chip">Powered By</span></div>
-                    <p style="color: var(--color-gray-400); margin-bottom: var(--space-md);">Hacktoberfest Hack Day Indore is powered by IDFC FIRST Bank, supporting a day of building, learning, and collaboration with the PyData Indore community.</p>
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                        <h3 style="margin: 0;">IDFC FIRST Bank</h3>
+                        <span class="hack-role-chip is-sponsor">Powered By</span>
+                    </div>
+                    <p style="color: var(--color-gray-400); margin-bottom: var(--space-md);">IDFC FIRST Bank supports a day of building, learning, and collaboration with the PyData Indore community at Hacktoberfest Hack Day Indore.</p>
                     <a href="https://www.idfcfirstbank.com/" target="_blank" rel="noopener" class="link-arrow">Visit IDFC FIRST Bank &rarr;</a>
                 </div>
             </div>
@@ -544,7 +617,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                 </details>
                 <details class="faq-item">
                     <summary>What should I bring?</summary>
-                    <div class="faq-answer">Your laptop, charger, and any hardware you want to hack with. Charging points are limited, so come fully charged and ideally carry a power bank. Keep a mobile hotspot handy as a backup connection.</div>
+                    <div class="faq-answer">Your laptop, charger, and any hardware you want to hack with. Charging points are limited, so come fully charged and ideally carry a power bank. Download and test any local models, including Gemma if you use it, before arriving; see the <a href="#model-preparation">model download resources</a>. Wi-Fi will be provided, but reliable connectivity is not guaranteed and speeds may vary with simultaneous participant usage. Keep a mobile hotspot handy as a backup connection.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Where do I submit my project?</summary>
@@ -567,7 +640,7 @@ extra_css: "/Assets/CSS/hack-days.css"
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Hack Day?</h2>
-                <p>Hacktoberfest Hack Day Indore lands on Sunday, 4 October 2026 at Walkover, LIC Tower, Indore. Powered by IDFC FIRST Bank. Registrations are closed; confirmed participants can review the challenges and prepare their submissions.</p>
+                <p>Hacktoberfest Hack Day Indore lands on Sunday, 4 October 2026 at Walkover, LIC Tower, Indore. Supported by IDFC FIRST Bank. Registrations are closed; confirmed participants can review the challenges and prepare their submissions.</p>
                 <div class="cta-actions">
                     <a href="https://events.mlh.com/events/14931-hacktoberfest-hack-day-indore-x-pydata-indore" target="_blank" rel="noopener" class="btn btn-primary btn-large">
                         View Event on MLH
