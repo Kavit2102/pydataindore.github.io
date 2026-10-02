@@ -1,7 +1,7 @@
 ---
 permalink: "/hacktoberfest/"
 title: "Hacktoberfest Hack Day — Indore x PyData Indore | 4 Oct 2026"
-description: "A one-day, in-person Hacktoberfest Hack Day powered by MLH Hack Days, on Sunday 4 October 2026 at Walkover, LIC Tower, Indore. Form a team, pick a problem, and ship a working prototype with Python & data. Free to join, all skill levels welcome."
+description: "A one-day, in-person Hacktoberfest Hack Day powered by MLH Hack Days, on Sunday 4 October 2026 at Walkover, LIC Tower, Indore. Form a team, pick a problem, and ship a working prototype with Python & data. Powered by IDFC FIRST Bank. Registrations are closed; entry is limited to confirmed participants."
 active: "events"
 extra_css: "/Assets/CSS/hack-days.css"
 ---
@@ -10,6 +10,10 @@ extra_css: "/Assets/CSS/hack-days.css"
     <header class="page-header">
         <div class="container">
             <div class="page-header-content hack-hero">
+                <div class="hack-notes" role="note" style="margin-top: 0; margin-bottom: var(--space-xl);">
+                    <h4>Note: Registrations are closed</h4>
+                    <p class="section-text" style="margin-bottom: 0;">Only confirmed participants will be allowed to attend the event. A registration or Meetup RSVP alone does not guarantee entry.</p>
+                </div>
 
                 <!-- Breadcrumb -->
                 <div style="display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-lg);">
@@ -34,13 +38,20 @@ extra_css: "/Assets/CSS/hack-days.css"
                         <h1>Hacktoberfest <span class="highlight">Hack Day</span></h1>
                     </div>
 
+                    <div class="hack-hero-sponsor">
+                        <span class="hack-poweredby-label">Powered by</span>
+                        <a href="https://www.idfcfirstbank.com/" target="_blank" rel="noopener" class="hack-hero-sponsor-logo" aria-label="IDFC FIRST Bank">
+                            <img src="/Assets/images/HackDays/IDFC-logo-website.svg" alt="IDFC FIRST Bank" width="235" height="83">
+                        </a>
+                    </div>
+
                     <!-- In partnership with — MLH -->
                     <div class="hack-hero-partner">
                         <span class="hack-poweredby-label">In partnership with</span>
                         <a href="https://mlh.io/" target="_blank" rel="noopener" class="hack-poweredby-logo is-secondary" aria-label="Major League Hacking">
                             <img src="/Assets/images/HackDays/mlh-white.svg" alt="MLH — Major League Hacking" loading="lazy">
                         </a>
-                        <span class="hack-poweredby-tag">Flagship Hack Days</span>
+                        <span class="hack-poweredby-tag">Hacktoberfest</span>
                     </div>
 
                     <p id="typing-headline" style="font-size: 1.15rem; color: var(--color-primary); font-family: var(--font-mono); margin-bottom: var(--space-md); letter-spacing: -0.01em; min-height: 1.6em;">One day. One prototype. Build something real with Python &amp; data.</p>
@@ -85,18 +96,19 @@ extra_css: "/Assets/CSS/hack-days.css"
                     </div>
                     <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-xl);">
                         <a href="https://events.mlh.com/events/14931-hacktoberfest-hack-day-indore-x-pydata-indore" target="_blank" rel="noopener" class="btn btn-primary btn-large">
-                            Register on MLH
+                            View Event on MLH
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
                         </a>
                         <a href="https://www.meetup.com/pydata-indore/" target="_blank" rel="noopener" class="btn btn-secondary btn-large">Join us on Meetup</a>
-                        <a href="#faq" class="btn btn-secondary btn-large">Read the FAQ</a>
+                        <a href="#challenges" class="btn btn-secondary btn-large">Explore Challenges</a>
+                        <a href="#submissions" class="btn btn-secondary btn-large">Submission Details</a>
                     </div>
                     <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-gray-600); margin-top: var(--space-md);">
-                        Registration is on the
+                        Event details are on the
                         <a href="https://events.mlh.com/events/14931-hacktoberfest-hack-day-indore-x-pydata-indore" target="_blank" rel="noopener" style="color: var(--color-primary);">official MLH event page</a>
-                        and is required for check-in and swag. Tracks, the full schedule, and more partners will be announced soon.
+                        &mdash; registrations are closed. Only confirmed participants may attend.
                     </p>
                   </div><!-- /.hack-hero-main -->
 
@@ -147,7 +159,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                         <div class="code-point"><span class="code-point-prefix">▸</span> Open theme — build anything with Python &amp; data</div>
                         <div class="code-point"><span class="code-point-prefix">▸</span> On-site mentors to unblock you fast</div>
                         <div class="code-point"><span class="code-point-prefix">▸</span> Live demos &amp; community feedback</div>
-                        <div class="code-point"><span class="code-point-prefix">▸</span> MLH swag &amp; certificates 🎁</div>
+                        <div class="code-point"><span class="code-point-prefix">▸</span> 1-month viaSocket subscription, MLH stickers &amp; certificates for all participants 🎁</div>
                     </div>
                 </div>
                 <div class="content-card">
@@ -175,17 +187,83 @@ extra_css: "/Assets/CSS/hack-days.css"
         </div>
     </section>
 
-    <!-- ==================== WHAT TO BUILD ==================== -->
-    <section class="content-section alt-bg">
+    <!-- ==================== CHALLENGES ==================== -->
+    <section class="content-section alt-bg" id="challenges">
         <div class="container">
             <div class="topics-header">
-                <span class="section-tag">Theme &amp; Tracks</span>
+                <span class="section-tag">Challenges</span>
                 <h2 class="section-title">What You'll <span class="highlight">Build</span></h2>
-                <p class="section-text" style="text-align: center; max-width: 680px; margin: 0 auto;">
-                    This edition rides the <strong style="color: var(--color-primary);">Hacktoberfest</strong> wave — a
-                    celebration of open source. Build something a real person would actually use, with Python &amp; data at
-                    its core. Detailed tracks and problem statements will be announced closer to the day.
-                </p>
+                <p class="section-text" style="text-align: center; max-width: 680px; margin: 0 auto;">This edition has two challenges. Build a useful working prototype in the spirit of Hacktoberfest and open source.</p>
+            </div>
+            <div class="hack-tracks">
+                <article class="hack-track">
+                    <div class="hack-track-head"><span class="track-icon" aria-hidden="true">&#10022;</span><div><span class="hack-track-num">Challenge 01</span><h3>Best Use of Gemma 4</h3></div></div>
+                    <p class="hack-track-desc">Build with Gemma 4, Google's lightweight, open-weight model, through the Gemini API. Make its AI capabilities a meaningful part of your prototype.</p>
+                    <span class="hack-track-ideas-label">Ideas to get you started</span>
+                    <ul class="hack-track-ideas">
+                        <li>Create an assistant that works with both text and images.</li>
+                        <li>Build an AI tool for learning, creativity, productivity, or your community.</li>
+                        <li>Prototype a useful experience with an open model through the Gemini API.</li>
+                        <li>Identify the Gemma model in your README and show its integration in your code or demo.</li>
+                    </ul>
+                    <a href="https://mlh.link/gemma" target="_blank" rel="noopener" class="link-arrow">Explore Gemma resources &rarr;</a>
+                </article>
+                <article class="hack-track">
+                    <div class="hack-track-head"><span class="track-icon" aria-hidden="true">&#10022;</span><div><span class="hack-track-num">Challenge 02</span><h3>Best Open-Source AI Project</h3></div></div>
+                    <p class="hack-track-desc">Create an original project with open-source or open-weight AI at its core: a reusable agent skill, an application using a small or large language model, or software that manages a model's tools and workflow.</p>
+                    <span class="hack-track-ideas-label">Requirements</span>
+                    <ul class="hack-track-ideas">
+                        <li>Use open-source or open-weight AI as a substantial part of the project.</li>
+                        <li>Publish your code in a public GitHub repository with an open-source license.</li>
+                        <li>Agent skills must follow the Agent Skill Open Standard.</li>
+                        <li>Model harnesses must be original implementations or meaningful improvements to existing open-source harnesses.</li>
+                    </ul>
+                </article>
+            </div>
+            <p class="section-text" style="text-align: center; margin-top: var(--space-xl);"><a href="https://www.mlh.com/events/hacktoberfest-hack-day-indore-x-pydata-indore/challenges" target="_blank" rel="noopener" class="link-arrow">View the official MLH challenges &rarr;</a></p>
+        </div>
+    </section>
+
+    <!-- ==================== PRIZES ==================== -->
+    <section class="content-section" id="prizes">
+        <div class="container">
+            <div class="topics-header"><span class="section-tag">Prizes &amp; Recognition</span><h2 class="section-title">Build, Demo &amp; <span class="highlight">Celebrate</span></h2></div>
+            <div class="hack-prize-row">
+                <div class="hack-prize-callout">
+                    <span class="hack-prize-badge">Challenge Winner</span><h3>Best Open-Source AI Project</h3>
+                    <p>One winning team. Each member receives a DEV Badge on their DEV account. MLH+DEV swag bags may also be provided, subject to availability and event onboarding.</p>
+                    <a href="https://hacktoberfest-handbook.mlh.com/fest-planning-guide/open-source-prize-categories" target="_blank" rel="noopener" class="link-arrow">MLH prize details &rarr;</a>
+                </div>
+                <div class="hack-prize-callout">
+                    <span class="hack-prize-badge">Partner Challenge</span><h3>Best Use of Gemma 4</h3>
+                    <p>Recognition for the winning Gemma project. The partner prize depends on regional availability and event onboarding; the specific prize will be confirmed by the organizers.</p>
+                    <a href="https://hacktoberfest-handbook.mlh.com/hack-days-partner-modules/partner-challenge-google-gemma" target="_blank" rel="noopener" class="link-arrow">Gemma challenge &amp; prize guidance &rarr;</a>
+                </div>
+                <div class="hack-prize-callout">
+                    <span class="hack-prize-badge">All Participants</span><h3>Something for Everyone</h3>
+                    <p>Every participant receives a one-month viaSocket subscription, MLH stickers, and a participation certificate.</p>
+                    <p class="hack-prize-reward">1 month of viaSocket + MLH stickers + certificate for all participants</p>
+                </div>
+            </div>
+            <p class="submit-note"><strong>Prize availability note:</strong> Prizes may differ from the details listed on the official MLH website, depending on what is received and available on the day of the event.</p>
+        </div>
+    </section>
+
+    <!-- ==================== SUBMISSIONS ==================== -->
+    <section class="content-section alt-bg" id="submissions">
+        <div class="container">
+            <div class="topics-header"><span class="section-tag">Submissions</span><h2 class="section-title">Share What You <span class="highlight">Built</span></h2><p class="section-text" style="text-align: center; max-width: 680px; margin: 0 auto;">Submit through the official MLH challenges page when submissions open. Follow the form and challenge requirements there; organizers will confirm the deadline at kickoff.</p></div>
+            <div class="content-card">
+                <h3>Prepare your project</h3>
+                <ul>
+                    <li>A project title, problem statement, and explanation of what you built.</li>
+                    <li>Your source code, setup instructions, technology stack, and team contributions.</li>
+                    <li>A working demo that shows the AI integration and its value.</li>
+                    <li>Disclosure of AI tools used and what they helped create.</li>
+                    <li>For open-source AI: a public GitHub repository, open-source license, and model details with links to its license or terms.</li>
+                    <li>For Gemma 4: identify the model and demonstrate its use through the Gemini API.</li>
+                </ul>
+                <a href="https://www.mlh.com/events/hacktoberfest-hack-day-indore-x-pydata-indore/challenges" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: var(--space-lg);">Go to MLH Submissions</a>
             </div>
         </div>
     </section>
@@ -201,7 +279,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                 <div class="track-card">
                     <span class="track-icon">🌱</span>
                     <h3>Open-Source Spirit</h3>
-                    <p>Build in the spirit of Hacktoberfest — ship something real, learn in the open, and take home MLH swag and a certificate.</p>
+                    <p>Build in the spirit of Hacktoberfest — ship something real, learn in the open, and take home MLH stickers and a participation certificate.</p>
                 </div>
                 <div class="track-card">
                     <span class="track-icon">🧑‍🏫</span>
@@ -281,7 +359,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                         <div class="hack-notes">
                             <h4>⚡ Good to Know</h4>
                             <ul>
-                                <li><span class="note-ico">✅</span><span><strong style="color: var(--color-gray-100);">Every member must register.</strong> Registration is per person — each team member has to register individually on MLH, not just one person for the whole team.</span></li>
+                                <li><span class="note-ico">✅</span><span><strong style="color: var(--color-gray-100);">Every member must be confirmed.</strong> Registrations are closed. Only confirmed participants will be allowed to attend.</span></li>
                                 <li><span class="note-ico">👥</span><span><strong style="color: var(--color-gray-100);">Team details at sign-up.</strong> You'll need to provide your team details — team name and members (up to 4) — while filling out the registration form.</span></li>
                                 <li><span class="note-ico">🔌</span><span><strong style="color: var(--color-gray-100);">Charging points are limited.</strong> Come fully charged, carry a power bank, and plan accordingly.</span></li>
                                 <li><span class="note-ico">📶</span><span><strong style="color: var(--color-gray-100);">Keep a backup internet connection.</strong> Wi-Fi will be provided, but please have a mobile hotspot ready in case of any Wi-Fi issues.</span></li>
@@ -321,11 +399,11 @@ extra_css: "/Assets/CSS/hack-days.css"
                     </div>
                     <div class="event-sidebar-row">
                         <span class="event-sidebar-label">Status</span>
-                        <span class="event-sidebar-value highlight">Upcoming</span>
+                        <span class="event-sidebar-value highlight">Registrations closed</span>
                     </div>
                     <a href="https://events.mlh.com/events/14931-hacktoberfest-hack-day-indore-x-pydata-indore" target="_blank" rel="noopener" class="btn btn-primary"
                        style="width: 100%; justify-content: center; margin-top: var(--space-xl);">
-                        Register on MLH
+                        View Event on MLH
                     </a>
                     <a href="https://www.meetup.com/pydata-indore/" target="_blank" rel="noopener" class="btn btn-secondary"
                        style="width: 100%; justify-content: center; margin-top: var(--space-sm);">
@@ -336,7 +414,7 @@ extra_css: "/Assets/CSS/hack-days.css"
                         All Events
                     </a>
                     <p style="text-align: center; font-family: var(--font-mono); font-size: 0.68rem; color: var(--color-gray-600); margin-top: var(--space-sm);">
-                        Registration is on the MLH event page. Tracks, schedule &amp; partners to be announced.
+                        Registrations are closed. Entry is limited to confirmed participants.
                     </p>
                 </aside>
             </div>
@@ -351,8 +429,17 @@ extra_css: "/Assets/CSS/hack-days.css"
                 <h2 class="section-title">Powered <span class="highlight">By</span></h2>
             </div>
 
+            <div class="sponsor-spotlight">
+                <div style="flex: 0 0 auto;"><a href="https://www.idfcfirstbank.com/" target="_blank" rel="noopener" class="sponsor-spotlight-logo" aria-label="IDFC FIRST Bank"><img src="/Assets/images/HackDays/IDFC-logo-website.svg" alt="IDFC FIRST Bank" width="235" height="83" loading="lazy"></a></div>
+                <div style="flex: 1 1 280px;">
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);"><h3 style="margin: 0;">IDFC FIRST Bank</h3><span class="hack-role-chip">Powered By</span></div>
+                    <p style="color: var(--color-gray-400); margin-bottom: var(--space-md);">Hacktoberfest Hack Day Indore is powered by IDFC FIRST Bank, supporting a day of building, learning, and collaboration with the PyData Indore community.</p>
+                    <a href="https://www.idfcfirstbank.com/" target="_blank" rel="noopener" class="link-arrow">Visit IDFC FIRST Bank &rarr;</a>
+                </div>
+            </div>
+
             <!-- Partner spotlight — MLH -->
-            <div class="sponsor-spotlight sponsor-spotlight-partner">
+            <div class="sponsor-spotlight sponsor-spotlight-partner" style="margin-top: var(--space-2xl);">
                 <div style="flex: 0 0 auto;">
                     <a href="https://mlh.io/" target="_blank" rel="noopener" class="sponsor-spotlight-logo" aria-label="Major League Hacking">
                         <img src="/Assets/images/HackDays/mlh-white.svg" alt="MLH — Major League Hacking" loading="lazy">
@@ -403,6 +490,23 @@ extra_css: "/Assets/CSS/hack-days.css"
                 </div>
             </div>
 
+            <!-- Education Partner -->
+            <div class="sponsor-spotlight sponsor-spotlight-partner" style="margin-top: var(--space-2xl);">
+                <div style="flex: 0 0 auto;">
+                    <a href="https://www.clouddevopshub.com/" target="_blank" rel="noopener noreferrer" class="sponsor-spotlight-logo" aria-label="Cloud DevOps Hub">
+                        <img src="/Assets/images/HackDays/cloud-devops-hub.jpeg" alt="Cloud DevOps Hub — Learn &amp; Grow Together" width="1600" height="554" loading="lazy">
+                    </a>
+                </div>
+                <div style="flex: 1 1 280px;">
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                        <h3 style="margin: 0;">Cloud DevOps Hub</h3>
+                        <span class="hack-role-chip">Education Partner</span>
+                    </div>
+                    <p style="color: var(--color-gray-400); margin-bottom: var(--space-md);">Cloud DevOps Hub is the Education Partner for Hacktoberfest Hack Day Indore.</p>
+                    <a href="https://www.clouddevopshub.com/" target="_blank" rel="noopener noreferrer" class="link-arrow" style="display: inline-flex;">Visit Cloud DevOps Hub &rarr;</a>
+                </div>
+            </div>
+
             <p class="section-text" style="text-align: center; max-width: 640px; margin: var(--space-2xl) auto 0;">
                 More sponsors &amp; partners will be announced soon. Want to support Hacktoberfest Hack Day Indore?
                 <a href="/contact/" style="color: var(--color-primary);">Get in touch</a>.
@@ -424,15 +528,15 @@ extra_css: "/Assets/CSS/hack-days.css"
                 </details>
                 <details class="faq-item">
                     <summary>Do I need a team?</summary>
-                    <div class="faq-answer">No. You can participate solo or form a team of up to 4. We'll have a team-formation session at the start if you show up without one. Note that you'll enter your team details on the registration form, so sort out your team before registering if you can.</div>
+                    <div class="faq-answer">No. You can participate solo or form a team of up to 4. We'll have a team-formation session at the start if you show up without one. Every team member must already be a confirmed participant.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Is this only for students?</summary>
                     <div class="faq-answer">No. MLH Hack Days are open to everyone — students, professionals, freelancers, and career-switchers. All skill levels are welcome.</div>
                 </details>
                 <details class="faq-item">
-                    <summary>How do I register?</summary>
-                    <div class="faq-answer"><strong>Every team member must register individually</strong> on the <a href="https://events.mlh.com/events/14931-hacktoberfest-hack-day-indore-x-pydata-indore" target="_blank" rel="noopener">official MLH event page</a> — registering one person for the whole team is not enough. It's required for check-in, swag, and eligibility, and a Meetup RSVP alone is not sufficient.</div>
+                    <summary>Can I still register or walk in?</summary>
+                    <div class="faq-answer"><strong>Registrations are already closed.</strong> Only confirmed participants will be allowed into the event. A Meetup RSVP alone does not confirm your place.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Can I use AI tools like ChatGPT, Copilot, or Gemini?</summary>
@@ -441,6 +545,10 @@ extra_css: "/Assets/CSS/hack-days.css"
                 <details class="faq-item">
                     <summary>What should I bring?</summary>
                     <div class="faq-answer">Your laptop, charger, and any hardware you want to hack with. Charging points are limited, so come fully charged and ideally carry a power bank. Keep a mobile hotspot handy as a backup connection.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>Where do I submit my project?</summary>
+                    <div class="faq-answer">Use the <a href="https://www.mlh.com/events/hacktoberfest-hack-day-indore-x-pydata-indore/challenges" target="_blank" rel="noopener">official MLH challenges and submissions page</a> when submissions open. See our <a href="#submissions">submission checklist</a> and follow the deadline announced at kickoff.</div>
                 </details>
                 <details class="faq-item">
                     <summary>How is this different from a regular meetup?</summary>
@@ -458,11 +566,11 @@ extra_css: "/Assets/CSS/hack-days.css"
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Save the Date</h2>
-                <p>Hacktoberfest Hack Day Indore lands on Sunday, 4 October 2026 at Walkover, LIC Tower, Indore. Grab your team, register on MLH, and come ship something real with Python &amp; data.</p>
+                <h2>Ready for Hack Day?</h2>
+                <p>Hacktoberfest Hack Day Indore lands on Sunday, 4 October 2026 at Walkover, LIC Tower, Indore. Powered by IDFC FIRST Bank. Registrations are closed; confirmed participants can review the challenges and prepare their submissions.</p>
                 <div class="cta-actions">
                     <a href="https://events.mlh.com/events/14931-hacktoberfest-hack-day-indore-x-pydata-indore" target="_blank" rel="noopener" class="btn btn-primary btn-large">
-                        Register on MLH
+                        View Event on MLH
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
