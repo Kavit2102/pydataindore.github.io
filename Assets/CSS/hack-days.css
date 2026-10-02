@@ -676,7 +676,7 @@
     font-size: 0.92rem;
     line-height: 1.7;
 }
-.faq-answer a { color: var(--color-primary); text-decoration: none; }
+.faq-answer a { color: var(--color-primary); text-decoration: none; overflow-wrap: anywhere; }
 
 @media (max-width: 900px) {
     .hack-hero-grid { grid-template-columns: 1fr; gap: var(--space-2xl); }

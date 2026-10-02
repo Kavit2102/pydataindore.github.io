@@ -153,9 +153,12 @@
     flex-direction: column;
     align-items: flex-end;
     gap: var(--space-sm);
+    /* The hidden panel still occupies space. Let taps reach the page beneath it. */
+    pointer-events: none;
 }
 
 .theme-toggle-btn {
+    pointer-events: auto;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -197,6 +200,7 @@
 }
 
 .theme-panel.open {
+    pointer-events: auto;
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
@@ -1352,13 +1356,24 @@ section {
     align-items: start;
 }
 
+.event-detail-main {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
 .event-detail-sidebar {
+    min-width: 0;
+    overflow-wrap: anywhere;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(163, 230, 53, 0.12);
     border-radius: var(--radius-lg);
     padding: var(--space-2xl);
     position: sticky;
     top: calc(80px + var(--space-xl));
+}
+
+.event-detail-sidebar .btn {
+    white-space: normal;
 }
 
 .event-sidebar-row {
@@ -2531,6 +2546,17 @@ section {
     flex-direction: column;
 }
 
+.team-grid-advisors {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.partner-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
 .team-member:hover {
     background: rgba(232, 121, 249, 0.04);
     border-color: var(--border-magenta);
@@ -3086,7 +3112,9 @@ section {
     font-size: 0.78rem;
     font-family: var(--font-mono);
     color: var(--color-gray-500);
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    min-width: 0;
     text-decoration: none;
     transition: all var(--transition-fast);
 }
@@ -3260,6 +3288,9 @@ section {
         top: 100%;
         left: 0;
         right: 0;
+        max-height: calc(100vh - 100%);
+        max-height: calc(100dvh - 100%);
+        overflow-y: auto;
         flex-direction: column;
         background: rgba(8, 8, 8, 0.98);
         backdrop-filter: blur(20px);
@@ -3462,8 +3493,17 @@ section {
     }
 
     .topics-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: var(--space-md);
+    }
+
+    .partner-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-card {
+        padding: var(--space-md);
+        overflow-wrap: anywhere;
     }
 
     .cta-actions {
